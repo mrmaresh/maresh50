@@ -20,3 +20,8 @@ def emma():
 def rodrigo():
     """responds to name Rodrigo"""
     check50.run("./hello").stdin("Rodrigo").stdout("Rodrigo").exit()
+
+@check50.check(compiles)
+def leah():
+    """responds to name Leah"""
+    check50.run("./hello").stdin("Leah").stdout("Leah").exit()
