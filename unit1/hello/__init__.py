@@ -13,8 +13,8 @@ def compiles():
 
 @check50.check(compiles)
 def emma():
-    """responds to name Emma"""
-    check50.run("./hello").stdin("Emma").stdout("Emma").exit()
+    """responds to name Mr. Maresh"""
+    check50.run("./hello").stdin("Mr. Maresh").stdout("Mr. Maresh").exit()
 
 @check50.check(compiles)
 def rodrigo():
