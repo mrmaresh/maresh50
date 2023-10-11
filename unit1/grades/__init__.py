@@ -27,12 +27,12 @@ def test3():
     check50.run("./isprime").stdin("79").stdout("You got a C.").exit(0)
 
 @check50.check(compiles)
-def test1():
+def test4():
     """check a score of 85 """
     check50.run("./isprime").stdin("85").stdout("You got a B.").exit(0)
 
 @check50.check(compiles)
-def test1():
+def test5():
     """check a score of 100 """
     check50.run("./isprime").stdin("100").stdout("You got an A.").exit(0)
 
