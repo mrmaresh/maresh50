@@ -13,8 +13,8 @@ def compiles():
 
 @check50.check(compiles)
 def mrmaresh():
-    """responds to name Mr. Maresh and age 40"""
-    check50.run("./retirement").stdin("Mr.").stdin("Maresh").stdin("40").stdout("Mr. Maresh has 27 more years until retirement.").exit()
+    """responds to name Mr. Maresh who is over 67"""
+    check50.run("./retirement").stdin("Mr.").stdin("Maresh").stdin("40").stdout("Mr. Maresh can already retire.").exit()
 
 @check50.check(compiles)
 def leah():
@@ -22,6 +22,6 @@ def leah():
     check50.run("./retirement").stdin("Leah").stdin("Johnson").stdin("22").stdout("Leah Johnson has 45 more years until retirement.").exit()
 
 @check50.check(compiles)
-def leah():
-    """responds to name Leah"""
-    check50.run("./hello").stdin("Leah").stdout("Leah").exit()
+def malachi():
+    """responds to Malachi Morgan who gives an impossible age of -5"""
+    check50.run("./retirement").stdin("Malachi").stdin("Morgan").stdin("-5").stdout("Please enter a positive integer for age.").exit()
