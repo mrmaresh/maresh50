@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def mrmaresh():
     """responds to name Mr. Maresh who is over 67"""
-    check50.run("./retirement").stdin("Mr.").stdin("Maresh").stdin("40").stdout("Mr. Maresh can already retire.").exit()
+    check50.run("./retirement").stdin("Mr.").stdin("Maresh").stdin("70").stdout("Mr. Maresh can already retire.").exit()
 
 @check50.check(compiles)
 def leah():
