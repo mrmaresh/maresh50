@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def emma():
     """responds to name Mr. Maresh"""
-    check50.run("./hello").stdin("Mr. Maresh").stdout("Mr. Maresh").exit()
+    check50.run("./hello").stdin("Mr.").stdin("Maresh").stdout("Mr. Maresh").exit()
 
 @check50.check(compiles)
 def rodrigo():
